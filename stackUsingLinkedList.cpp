@@ -93,7 +93,7 @@ int main()
         cout << "3. Peek\n";
         cout << "4. Exit\n";
         cout << "Enter your choice : ";
-        cin >> "Enter your choice : ";
+        cin >> choice;
 
         switch (choice)
         {
@@ -102,7 +102,21 @@ int main()
                 cin >> value;
                 stact.push(value);
                 break;
+            case 2:
+                if(!stact.isEmpty())
+                {
+                    stact.pop();
+                }
+                else
+                {
+                    cout << "Stact is Empty. Cannot pop. " ;
+                    cout << endl;
+
+                }
+                break;
             
+
+
 
 
 
